@@ -11,6 +11,7 @@ Pelican.
    ```bash
    $ git clone --recursive git@github.com:pycnic/pycnic.github.io-dev.git pycnic-blog
    $ cd pycnic-blog
+   $ git submodule update --init --recursive
    ```
 2. Set up the environment with conda:
    ```bash
