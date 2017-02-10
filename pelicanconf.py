@@ -38,7 +38,13 @@ DEFAULT_DATE = 'fs'
 THEME = 'pelican-themes/pelican-bootstrap3'
 
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ['liquid_tags.notebook', 'related_posts', 'series']
+PLUGINS = [
+    'liquid_tags.notebook',
+    'related_posts',
+    'series',
+    'category_order',
+    'render_math',
+]
 
 # pelican-bootstrap3 settings
 JINJA_EXTENSIONS = ['jinja2.ext.i18n']

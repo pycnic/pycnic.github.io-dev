@@ -2,6 +2,7 @@ name: pycnic-blog
 channels:
 - defaults
 dependencies:
+- beautifulsoup4=4.5.3=py36_0
 - bokeh=0.12.4=py36_0
 - curl=7.52.1=0
 - cycler=0.10.0=py36_0
@@ -97,3 +98,5 @@ dependencies:
   - jupyter-core==4.2.1
   - pelican==3.7.1
   - prompt-toolkit==1.0.9
+  - smartypants==2.0.0
+  - typogrify==2.0.7
