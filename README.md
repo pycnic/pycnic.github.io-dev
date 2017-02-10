@@ -7,17 +7,19 @@ Pelican.
 
 ## Setup
 
-1. Clone the repository (including submodules):
-   ```bash
-   $ git clone --recursive git@github.com:pycnic/pycnic.github.io-dev.git pycnic-blog
-   $ cd pycnic-blog
-   $ git submodule update --init --recursive
-   ```
-2. Set up the environment with conda:
-   ```bash
-   $ conda env create -f environment.yml
-   $ source activate pycnic-blog
-   ```
+Step 1: Clone the repository (including submodules):
+
+```bash
+$ git clone --recursive git@github.com:pycnic/pycnic.github.io-dev.git pycnic-blog
+$ cd pycnic-blog
+$ git submodule update --init --recursive
+```
+
+Step 2: Set up the environment with conda:
+```bash
+$ conda env create -f environment.yml
+$ source activate pycnic-blog
+```
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
