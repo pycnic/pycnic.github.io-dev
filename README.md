@@ -39,6 +39,9 @@ Step 4: If satisfied, commit and push added or changed sources in the ``content`
 
 ## Publish
 
+**CAUTION Step 0: Do not forget to commit and push your changes to this source repository (see Step 4 above).**
+Otherwise, next time your collaborator publishes her new posts, it will not contain your changes / additions!
+
 Step 1: Activate the environment:
 ```bash
 $ source activate pycnic-blog
