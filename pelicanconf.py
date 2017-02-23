@@ -13,11 +13,15 @@ TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+#FEED_ALL_ATOM = None
+#CATEGORY_FEED_ATOM = None
+#TRANSLATION_FEED_ATOM = None
+#AUTHOR_FEED_ATOM = None
+#AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = None
@@ -25,9 +29,10 @@ LINKS = None
 #         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = None
-#SOCIAL = (('You can add links in your config file', '#'),
-#          ('Another social link', '#'),)
+SOCIAL = (
+    ('atom feed', FEED_ALL_ATOM, 'rss'),
+    ('github', 'http://github.com/pycnic'),
+)
 
 DEFAULT_PAGINATION = 10
 
@@ -57,7 +62,7 @@ SHOW_ARTICLE_CATEGORY = True
 SHOW_DATE_MODIFIED = True
 
 GITHUB_USER = 'pycnic'
-GITHUB_SHOW_USER_LINK = True
+GITHUB_SHOW_USER_LINK = False
 
 CC_LICENSE = 'CC-BY'
 DISPLAY_TAGS_ON_SIDEBAR = True
