@@ -1,6 +1,6 @@
 Title: Introducing the Meta category
 Date: 2017-02-23
-Category: Meta
+Category: About
 Tags: about
 Authors: Andreas Sorge
 
