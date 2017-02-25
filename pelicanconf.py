@@ -32,6 +32,7 @@ LINKS = None
 SOCIAL = (
     ('atom feed', FEED_ALL_ATOM, 'rss'),
     ('github', 'http://github.com/pycnic'),
+    ('docker', 'https://hub.docker.com/u/pycnic/'),
 )
 
 DEFAULT_PAGINATION = 10
