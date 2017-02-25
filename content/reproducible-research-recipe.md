@@ -26,11 +26,20 @@ Specifically, the recipe employs the following ingredients:
 
 - Operating system:
   [<i class="fa fa-linux" aria-hidden="true"></i> Ubuntu][ubuntu]
+- Command processor:
+  [<i class="fa fa-terminal" aria-hidden="true"></i>
+  Bash][bash]
+- System configuration:
+  dotphiles, https://dotfiles.github.io/
+- Text editor:
+  [Atom][atom]
 - Version control system:
   [<i class="fa fa-git" aria-hidden="true"></i> Git][git]
 - Web-based version control repository:
   [<i class="fa fa-gitlab" aria-hidden="true"></i> GitLab][gitlab],
   [<i class="fa fa-github" aria-hidden="true"></i> GitHub][github]
+- Commit message:
+  https://docs.scipy.org/doc/numpy/dev/gitwash/development_workflow.html#writing-the-commit-message
 - Scripting language:
   [<i class="fa fa-python" aria-hidden="true"></i> Python][python]
 - Unit testing framework:
@@ -44,13 +53,17 @@ Specifically, the recipe employs the following ingredients:
 - Text source markup language:
   [Markdown][markdown], [reStructuredText][rst], [LaTeX][latex]
 - Text document converter:
-  [Pandoc][pandoc]
+  [Pandoc][pandoc],
+  [Sphinx][sphinx],
+  [TeX Live][texlive]
 - Virtualization software:
   [Docker][docker]
 - Reference management software:
   [Zotero][zotero]
 - Task management and automation:
-  [doit][doit]
+  [doit][doit],
+  [latexmk][latexmk],
+  [Make][make]
 - Package and environment management:
   [Conda][conda], [pip][pip]
 - License:
@@ -66,17 +79,23 @@ Specifically, the recipe employs the following ingredients:
   [Pweave][pweave]
 - Plotting:
   [HoloViews][holoviews], [Bokeh][bokeh], [Matplotlib][matplotlib]
-- Technical documentation:
-  [Sphinx][sphinx]
 - Hosting documentation:
   [Read The Docs][rtd]
 - Continuous Integration (CI):
   [GitLab CI][gitlab-ci], [Travis CI][travis-ci]
+- Random number generation
+- Profiling
+- Style Guide:
+  [PEP 8][pep8],
+  [numpydoc][numpydoc]
 - High-Performance Computing (HPC):
   Grid Engine (SGE),
   [Dask][dask],
   Running dask on IPython parallel,
-  Configuring IPython parallel on Grid Engine cluster
+  Configuring IPython parallel on Grid Engine cluster,
+  SSH,
+  tmux,
+  Random Number Generation in parallel computing
 - Interactive High-Performance Computing (IHPC):
   Running Jupyter on a cluster node,
   [IPython Parallel][ipyparallel]
@@ -86,6 +105,45 @@ Specifically, the recipe employs the following ingredients:
   [Authorea][authorea]
 - Persistent researcher identifier:
   [ORCID][orcid]
+- Software repository:
+  [Anaconda Cloud][anaconda],
+  [Python Package Index][pypi]
+
+Concepts:
+
+- Artifact
+- Profiling
+- Random number generation
+- Parallel Computing
+- Task scheduling
+- Task automation
+- "Full" reproducibility
+- Researcher identifier
+- Research output repository
+- Digital object identifier (DOI)
+- Continuous integration (CI)
+- Reproducible reporting and literate programming
+- Unit testing
+- Property-based testing
+- Stateful testing
+- Pinning dependencies
+- Version control
+- Workflow
+- Release
+- Semantic versioning
+- Style convention
+- Pull/Merge request
+- Environment
+- Issue
+- Interactive computing
+- Refactoring code into a library
+- Reference management
+- Long computations
+- Build pipeline
+- Storing large datasets
+- Processing large datasets (out-of-core computation)
+- Licensing
+- Readme file
 
 At the heart of the recipe is the notion of an *artifact*, as inspired by
 [Bekolay (2013)][@bekolay_efficient_2013].
@@ -132,3 +190,12 @@ research reports, software packages and presentations.
 [zenodo]: https://zenodo.org/
 [authorea]: https://www.authorea.com/
 [orcid]: https://orcid.org/
+[bash]: https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29
+[atom]: https://atom.io/
+[texlive]: https://en.wikipedia.org/wiki/TeX_Live
+[pep8]: https://www.python.org/dev/peps/pep-0008/
+[numpydoc]: https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
+[anaconda]: https://anaconda.org
+[pypi]: https://pypi.python.org/pypi
+[latexmk]: http://ctan.org/pkg/latexmk
+[make]: https://en.wikipedia.org/wiki/Make_(software)
