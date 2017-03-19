@@ -116,10 +116,16 @@ the cluster master or login node.
 Now, we connect to the dask scheduler on our local host with:
 
 ```python
-# port : set either interactively or feed in as command-line argument
+# address is localhost:port
 from dask.distributed import Client
-client = Client('localhost:{}'.format(port))
+client = Client(address)
 ```
+
+The biggest caveat is that Bokeh is not forwarded this way.
+
+Further reading and examples:
+
+- [Custom Parallel Algorithms on a Cluster with Dask](http://matthewrocklin.com/blog/work/2017/01/24/dask-custom)
 
 [drmaa]: https://en.wikipedia.org/wiki/DRMAA
 [distributed]: https://distributed.readthedocs.io/en/latest/
